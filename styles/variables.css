@@ -11,7 +11,7 @@
   --margin-content-block: clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
   --stroke-color: white;
   --button-text-color-hover: #fff;
-  --button-text-color: #000; 
+  --button-text-color: #000;
   --heart-contour-color: #000;
   --animation-heart-fill-color: red;
   --contour-color: red;
