@@ -1,1 +1,1 @@
-https://dp89-cloud.github.io/zakrivayuschiy-teg-f/
+https://github.com/dp89-cloud/zakrivayuschiy-teg-f
