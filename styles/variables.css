@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root { 
+  --main-text: 'Inter';
+  --alternate-text: 'PressStart2P';
+  --main-text-wght-title: 715;
+  --main-text-wght-p: 410;
+  --background-gradient-vertical: repeating-linear-gradient( to right, #d3d3d3, transparent 2px);
+  --backgroung-gradient-gorizontal: repeating-linear-gradient( to bottom, #d3d3d3, transparent 2px);
+  --backgroung-gradient-smooth: linear-gradient( to bottom, #e7e7e7 0.01%, #1a1a1a);
+  --content-block-wigth: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --margin-content-block: clamp(0rem, -8.1426rem + 34.7418vw, 23.125rem);
+  --stroke-color: white;
+  --button-text-color-hover: #fff;
+  --button-text-color: #000; 
+  --heart-contour-color: #000;
+  --animation-heart-fill-color: red;
+  --contour-color: red;
+}
