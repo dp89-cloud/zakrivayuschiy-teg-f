@@ -70,7 +70,8 @@
 }
 
 .content__image-wrapper { 
-  border: 2px solid #000; 
+  border-top: 2px solid #000; 
+  border-bottom: 2px solid #000; 
   position: relative;
 }
 
@@ -163,13 +164,18 @@
   border-color: #000;
 }
 
+.card__like-button, 
+.button__dialog-open,
+.dialog__button-window-close { 
+  transition: box-shadow 0.3s ease;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
 .card__like-button { 
   min-width: 130px;
   min-height: 38px;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
 }
 
 .button__text { 
@@ -249,19 +255,13 @@
   z-index: 2;
 }
 
-.button__dialog-open { 
+.button__dialog-open {  
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   padding: 17px 20px;
-  border: 2px solid #000;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
-  margin-block-end: 50px;
-  background-color: #fff;
-  position: relative;
-  overflow: hidden;
+  margin-block-end: 100px;
 }
 
 .dialog__window { 
@@ -290,21 +290,21 @@
   align-self: center;
 }
 
+.dialog__text,
+.dialog__button-window-close { 
+  text-transform: uppercase;
+}
+
 .dialog__text { 
   font-family: var(--alternate-text);
   font-size: 14px;
   line-height: 1.4;
-  text-transform: uppercase;
  }
 
- .dialog__button-window-close { 
+.dialog__button-window-close { 
   min-width: 293px;
   min-height: 38px;
   margin-block-start: 30px;
-  background-color: #fff;
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
  }
 
  dialog::backdrop { 
@@ -340,7 +340,6 @@
 .button__dialog-open { 
   flex-direction: column;
   background-color: #fff;
-  margin-block-end: 100px;
 }
 }
 
