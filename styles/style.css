@@ -164,9 +164,7 @@
   border-color: #000;
 }
 
-.card__like-button, 
-.button__dialog-open,
-.dialog__button-window-close { 
+.button-hovered { 
   transition: box-shadow 0.3s ease;
   background-color: #fff;
   position: relative;
@@ -188,9 +186,7 @@
   mix-blend-mode: difference; 
 }
 
-.card__like-button::after,
-.button__dialog-open::after,
-.dialog__button-window-close::after {
+.button-hovered::after { 
   content: "";
   position: absolute;
   inset: 0;
@@ -199,9 +195,7 @@
   z-index: 0;
 }
 
-.card__like-button::before,
-.button__dialog-open::before,
-.dialog__button-window-close::before { 
+.button-hovered::before { 
   content: "";
   position: absolute;
   inset: 0;
@@ -211,29 +205,18 @@
   z-index: 1;
 }
 
-.card__like-button:hover::before,
-.button__dialog-open:hover::before,
-.dialog__button-window-close:hover::before { 
+.button-hovered:hover::before { 
   transform: translateX(0);
 }
 
-.card__like-button:focus,
-.card__like-button:focus-visible,
-.dialog__button-window-close:focus,
-.dialog__button-window-close:focus-visible,
-.button__dialog-open:focus,
-.button__dialog-open:focus-visible { 
+.button__shadow-focused { 
+  transition: box-shadow 0.3s ease;
+}
+
+.button__shadow-focused:focus,
+.button__shadow-focused:focus-visible { 
   outline: none;
   box-shadow: 2px 2px 0 #000;
-}
-
-.card__like-button::after { 
-  transition: none;
-}
-
-.card__like-button:focus::after,
-.card__like-button:focus-visible::after { 
-  transition: box-shadow 0.3s ease;
 }
 
 .content__card:last-child { 
@@ -299,17 +282,17 @@
   font-family: var(--alternate-text);
   font-size: 14px;
   line-height: 1.4;
- }
+}
 
 .dialog__button-window-close { 
   min-width: 293px;
   min-height: 38px;
   margin-block-start: 30px;
- }
+}
 
  dialog::backdrop { 
   background-color: rgb(0 0 0 / 0.75);
- }
+}
 
  @media (width <= 375px) { 
 .header__title-block { 
